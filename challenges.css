@@ -1,0 +1,89 @@
+/* Reset default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    padding: 20px;
+    background-image: linear-gradient(to right top, #ddcdff, #e4cefe, #eacffd, #f0d0fb, #f6d1fa, #fad0f3, #fdd0ec, #ffd0e6, #ffcfda, #ffcfce, #ffd1c3, #ffd4ba);
+
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #000000;
+    font-size: 2.5rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.challenge-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.challenge-details {
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #1e1d1d;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #777;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+p {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+button {
+    background: hsl(261, 100%, 63%);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color:#5b0065;
+}
+.back-to-home-btn {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: hsl(261, 100%, 63%); /* Example blue background */
+    color: white; /* White text */
+    text-decoration: none; /* Removes underline from link */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+}
+.back-to-home-btn:hover {
+    background-color: hsl(261, 96%, 53%); /* Darker blue on hover */
+    cursor: pointer; /* Changes cursor to pointer */
+}

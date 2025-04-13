@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to right top, #ddcdff, #e4cefe, #eacffd, #f0d0fb, #f6d1fa, #fad0f3, #fdd0ec, #ffd0e6, #ffcfda, #ffcfce, #ffd1c3, #ffd4ba);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-box {
+    height: 400px;
+    overflow-y: auto;
+    padding: 20px;
+    background: hsla(263, 32%, 92%, 0.959)
+}
+
+.message {
+    margin: 10px 0;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+}
+
+.sender {
+    background-color: #e481fc;
+    align-self: flex-start;
+    text-align: left;
+}
+
+.receiver {
+    background-color: #72387bc4;
+    align-self: flex-end;
+    text-align: right;
+}
+
+.chat-input {
+    display: flex;
+    padding: 10px;
+    background-color: #8d8989cf;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+.chat-input button {
+    padding: 10px 20px;
+    background-color: #e481fc;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.chat-input button:hover {
+    background-color: #c4a2c9;
+}
+button:hover {
+    background-color:#5b0065;
+}
+.back-to-home-btn {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color:#5b0065; /* Example blue background */
+    color: white; /* White text */
+    text-decoration: none; /* Removes underline from link */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+}
+.back-to-home-btn:hover {
+    background-color: #c4a2c9; /* Darker blue on hover */
+    cursor: pointer; /* Changes cursor to pointer */
+}
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5b0065;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  .back-button:hover{
+    background-color: #c4a2c9; /* Darker blue on hover */
+    cursor: pointer; /* Changes cursor to pointer */
+  }

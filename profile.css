@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    background-image: linear-gradient(to right top, #ddcdff, #e4cefe, #eacffd, #f0d0fb, #f6d1fa, #fad0f3, #fdd0ec, #ffd0e6, #ffcfda, #ffcfce, #ffd1c3, #ffd4ba);
+    font-family: poppins;
+}
+.wrapper {
+   width: 100vw;
+   height: 100vh;
+}
+.circle1 {
+    position: fixed;
+    top: 5%;
+    left: 30%;
+    width: 13em;
+    height: 13em;
+    border-radius: 50%;
+    box-shadow: 0 0 50px hsla(261, 100%, 63%, 0.708);
+    background: linear-gradient(-25deg, #DDCDFF, #DDCDFF);
+    animation: circle1Animate 15s infinite;
+}
+  
+@keyframes circle1Animate {
+    50% {
+      left: 33%;
+      top: 4%;
+      scale: 3;
+    }
+}
+
+.circle2 {
+    position: absolute;
+    bottom: 5%;
+    right: 30%;
+    width: 19em;
+    height: 19em;
+    border-radius: 50%;
+    box-shadow: 0 0 50px hsla(261, 100%, 63%, 0.779);
+    background: linear-gradient(-25deg, #DDCDFF, #DDCDFF);
+    animation: circle2Animate 10s infinite;
+}
+
+@keyframes circle2Animate {
+    50% {
+      bottom: 6%;
+      right: 31%;
+      scale: 3;
+    }
+}
+
+
+.wrapper-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    height: 450px;
+    border: 2px solid #fbd4b830;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: hsla(261, 95%, 61%, 0.126);
+    backdrop-filter: blur(60px);
+    border-radius: 15px;
+    border-color: hsl(261, 91%, 74%);
+    color: #ffffff;
+    padding: 20px 50px;
+    
+}
+
+.wrapper-card div img {
+    border: 2px solid #f0c6a530;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.designation h3 {
+    text-align: center;
+    color: #fffffffa;
+}
+
+.username h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.btn-grp {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.btn-share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    padding: 9px 12px;
+    background: #ffffff00;
+    border: 2px solid #ffffffb9;
+    text-transform: capitalize;
+    border-radius: 4px;
+    color: #ffffffb9;
+    cursor: pointer;
+}
+
+.btn-follow {
+    text-transform: capitalize;
+    width: 150px;
+    padding: 9px 12px;
+    background: #ffffff00;
+    border: 2px solid #ffffffb9;
+    border-radius: 4px;
+    color: #ffffffb9;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn-card:hover {
+    background: #ffffffb9;
+    color: #131313;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    border: 2px solid #8c56ff;
+    width: 500px;
+    scale: 0;
+    background: #DDCDFF;
+    backdrop-filter: blur(40px);
+    color: white;
+    z-index: 1;
+    box-shadow:1px 2px 3px 500px #a47cfba7;
+    padding: 20px 25px;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.modalHeader {
+    display: flex;
+    margin-bottom: 25px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ffffff88;
+}
+
+.modalHeader div i {
+    font-size: 30px;
+}
+
+.close {
+    cursor: pointer;
+}
+
+.icon-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.icon {
+    border: 1px solid #ffffff88;
+    padding: 17px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+    gap: 6px;
+    justify-content: center;
+    transition: all 0.5s;
+    margin-bottom: 25px;
+    text-decoration: none;
+}
+
+.icon i {
+    font-size: 27px;
+}
+
+#facebook {
+    color: #e8ebf0;
+    border: 1px solid #f0f3f8;
+  }
+  #facebook:hover {
+    background-color: #f7efef;
+    color: #0745ef;
+  }
+  
+  #twitter {
+    color: #1c99e6;
+    border: 1px solid #1c99e6;
+  }
+  #twitter:hover {
+    background-color: #1c99e6;
+    color: #fff;
+  }
+  
+  #instagram {
+    color: #cb2770;
+    border: 1px solid #cb2770;
+}
+
+#instagram:hover {
+    background-color: #cb2770;
+    color: #fff;
+}
+  
+
+.active {
+    scale: 1;
+}
+
+.overlay {
+    position: fixed;
+    background-color: #3e3f3e83;
+    top: 0;
+    opacity: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    transition: 0.5s ease-in-out;
+}
+
+.overlayactive {
+    opacity: 1;
+    pointer-events: initial;
+}
+
+/* For Tablets */
+@media (max-width: 850px) {
+    .wrapper-card {
+      max-width: 250px;
+      width: 300px;
+    }
+    .btn-grp {
+      flex-direction: column;
+    }
+    .modal {
+      width: 70vw;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .wrapper-card {
+      position: static;
+      top: 0;
+      left: 0;
+      translate: 0 0;
+      margin: 0 12px;
+      padding: 0 10px;
+    }
+    .wrapper-card div img {
+      width: 120px;
+      height: 120px;
+    }
+    .username h2 {
+      font-size: 1.3rem;
+    }
+    .modal {
+      width: 80vw;
+    }
+}
+.back-to-home-btn {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: hsl(261, 72%, 65%); /* Example blue background */
+    color: white; /* White text */
+    text-decoration: none; /* Removes underline from link */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+}
+.back-to-home-btn:hover {
+    background-color: hsl(261, 96%, 53%); /* Darker blue on hover */
+    cursor: pointer; /* Changes cursor to pointer */
+}
